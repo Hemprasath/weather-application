@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Weather App</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="background">
+        <video poster="video/pexels-pacific-3783385.jpg" autoplay loop muted plays-inline class="back-video">
+            <source src="video/1154-143492926.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="entry-container">
+        <h1 class="heading">WEATHER APP</h1>
+        <p class="head2">Get real-time weather updates</p>
+        <button id="enterBtn" class="btn fade-in">Enter</button>
+    </div>
+
+    <script>
+        document.getElementById("enterBtn").addEventListener("click", function() {
+            document.body.classList.add("fade-out");
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

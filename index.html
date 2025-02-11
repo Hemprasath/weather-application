@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="scroll">
+    <div class="container">
+        <h1 class="top fade-in">🌦️ Weather App</h1>
+        
+        <div class="header">
+        <div class="inputbox">
+            <input type="text" id="cityInput" required="required" class="fadeInUp">
+            <span class="boxname">Enter City Name</span>
+            <i></i>
+        </div>
+        <button id="searchBtn" class="btn pulse">Search</button>
+        <button id="currentLocationBtn" class="btn pulse">Use Current Location</button>
+    </div>
+        <div id="loading" class="loading hidden">☁️ Loading...</div>
+
+        <!-- Current Weather -->
+        <div id="weatherResult" class="fade-in hidden">
+            <h2 id="cityName" class="names"></h2>
+            <img id="weatherIcon" src="" alt="Weather Icon" class="weather-icon">
+            <p id="temperature" class="names"></p>
+            <p id="description" class="names"></p>
+            <p id="humidity" class="names"></p>
+            <p id="windSpeed" class="names"></p>
+        </div>
+
+        <!-- Hourly Weather -->
+        <div id="hourlyForecast" class="hourbox forecast-container hidden">
+            <h2 class="heading fade-in">⏳ HOURLY FORECAST</h2>
+            <div id="hourlyCards" class="box forecast-cards"></div>
+        </div>
+
+        <!-- Weekly Forecast -->
+        <div id="weeklyForecast" class="weekbox forecast-container hidden">
+            <h2 class="heading fade-in">📅 WEEKLY FORECAST</h2>
+            <div id="weeklyCards" class="box forecast-cards"></div>
+        </div>
+    </div>
+   </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
